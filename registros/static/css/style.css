@@ -1,0 +1,44 @@
+header,footer{
+    background-color: var(--pico-primary);
+    color: var(--pico-primary-inverse);
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-auto-flow: auto auto 1fr auto;
+    margin: 0;
+}
+
+.miTituloNav{
+   color: var(--pico-primary-inverse);
+}
+
+.boton-rojo{
+    background-color: #EE402E;
+}
+
+ul.errors{
+    color: #EE402E;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+ul.flashes{
+    color: rgb(97, 178, 16);
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.contenedor-scroll {
+  width: 100%;/*  Ancho del contenedor */
+  height: 600px; /* Alto del contenedor */
+  border: 1px solid #ccc; /* Borde para visualizar el div */
+  overflow-y: auto; /* Barra de desplazamiento vertical solo si es necesaria */
+}
+
+.inactive{
+    display: none;
+}

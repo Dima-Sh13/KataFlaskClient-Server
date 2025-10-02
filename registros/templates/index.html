@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Gestion</title>
+    <link rel="stylesheet" href="/static/css/pico.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/app.js"></script>
+    <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.min.css " rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            App Gestion de Movimientos
+        </div>
+    </header>
+    <section class="container">
+        <h2>Movimientos</h2>
+        <nav>
+            <ul>
+                <li><a role="button" id="btn_crear">Nuevo</a></li>
+            </ul>
+        </nav>
+        <table id="movements_table">
+            <tr>
+                <th>Id</th>
+                <th>Fecha</th>
+                <th>Concepto</th>
+                <th>Cantidad</th>
+            </tr>
+
+        </table>
+
+        <article id="movements_detail" class="inactive">
+            <form id="movements_form" method="post">
+                <input type="date" name="date" id="date">
+                <input type="text" name="concept" id="concept" placeholder="Concepto de gasto/ingreso" autocomplete="off"> 
+                <input type="number" name="quantity" id="quantity" step="0.01" placeholder="Ingrese el monto">
+                <input type="hidden" name="id" id="id">
+               
+                  
+            </form>
+            <div class="grid">
+                    <button id="btn_cerrar">Cerrar</button>
+                    <button id="btn_guardar">Guardar</button>
+                    <button id="btn_borrar">Borrar</button>
+                    <button id="btn_modificar">Modificar</button>  
+
+                </div>
+             
+        </article>
+       
+    </section>
+
+    <footer>
+        <div class="container">
+           &copy; 2025-RL
+        </div>
+    </footer>
+
+    <script src=" https://cdn.jsdelivr.net/npm/sweetalert2@11.23.0/dist/sweetalert2.all.min.js "></script>
+</body>
+</html>
